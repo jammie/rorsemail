@@ -1,0 +1,9 @@
+<table>
+  <% Mail.all.each do |email| %>
+    <tr>
+      <td><%= email.from %></td>
+      <td><%= email.subject %></td>
+  </tr>
+  <% end %>
+</table>
+
