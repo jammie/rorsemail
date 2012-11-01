@@ -1,5 +1,6 @@
 class MailSessionController < ApplicationController
   def index
+  	@servers = MailServer.all
   end
   
   def login
