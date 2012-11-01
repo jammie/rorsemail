@@ -2,4 +2,8 @@
   <%= f.text_field :username %>
   <%= f.password_field :password %>
   <%= f.submit :submit %>
+
+  <%= select_tag "mail_server_id",  options_from_collection_for_select(@servers, "id", "address") %>
+
+
 <% end %>
